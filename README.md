@@ -28,4 +28,5 @@ For the cocktail explorer you have 4 options:
 2. Click to display a random cocktail.
 3. Search for a cocktail by a specific ingredient.
 4. Search for a cocktail by the name.
+   
 For the Brewery Locator you can search by the city and state of the area you want to visit a brewery.

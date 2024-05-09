@@ -130,7 +130,7 @@ export default function Cocktails() {
             {cocktails.length > 0 && (
                 <ul>
                     {cocktails.map((cocktail, index) => (
-                        <li key={index}>{cocktail.strDrink}</li>
+                        <li key={index}>{(cocktail as { strDrink: string }).strDrink}</li>
                     ))}
                 </ul>
             )}

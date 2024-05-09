@@ -14,15 +14,16 @@ export default function Cocktails() {
         const fetchIngredients = async () => {
             const response = await fetch("https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list");
             const data = await response.json();
-            setIngredients(data.drinks.map(item => item.strIngredient1));};
-            fetchIngredients(); 
-        }, []);
+            setIngredients(data.drinks.map((item: { strIngredient1: string }) => item.strIngredient1));
+        };
+        fetchIngredients(); 
+    }, []);
 
-    const handleIngredientChange = (e) => {
+    const handleIngredientChange = (e: ChangeEvent<HTMLInputElement>) => {
         setIngredientQuery(e.target.value);
     };
 
-    const handleCocktailChange = (e) => {
+    const handleCocktailChange = (e: ChangeEvent<HTMLInputElement>) => {
         setCocktailQuery(e.target.value);
     };
 

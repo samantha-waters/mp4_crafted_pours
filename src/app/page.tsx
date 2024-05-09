@@ -86,7 +86,7 @@ export default function Cocktails() {
 
 
     return (
-        <div class="container">
+        <div className="container">
         <div>
             <h1>Welcome to Crafted Pours</h1>
             <h2>Choose to navigate between a cocktail or a brewery:</h2> 
@@ -111,11 +111,11 @@ export default function Cocktails() {
                 </ul>
             )}
 
-            <button class="skinny" onClick={handleToggleIngredients}>
+            <button className="skinny" onClick={handleToggleIngredients}>
                 {showIngredients ? 'Hide Ingredients' : 'Show Ingredients'}
             </button>
 
-            <button class="skinny" onClick={handleRandomCocktail}>Random Cocktail</button>
+            <button className="skinny" onClick={handleRandomCocktail}>Random Cocktail</button>
 
             <form onSubmit={(e) => handleSubmit(e, ingredientQuery)}>
                 <input

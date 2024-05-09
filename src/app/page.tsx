@@ -146,8 +146,8 @@ export default function Cocktails() {
 
             {cocktail && (
                 <div>
-                    <h2>{cocktail.strDrink}</h2>
-                    <p>{cocktail.strInstructions}</p>
+                    <h2>{(cocktail as { strDrink: string }).strDrink}</h2>
+                    <p>{(cocktail as { strInstructions: string }).strInstructions}</p>
                 </div>
             )}
             </section>

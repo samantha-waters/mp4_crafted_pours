@@ -27,7 +27,7 @@ export default function Cocktails() {
         setCocktailQuery(e.target.value);
     };
 
-    const handleSubmit = async (e, query) => {
+ const handleSubmit = async (e: FormEvent, query: string) => {
         e.preventDefault();
         const response = await fetch(`https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${query}`);
         const data = await response.json();
